@@ -285,7 +285,7 @@ class TranslatableSubscriber extends AbstractSubscriber
      */
     private function isTranslatable(ClassMetadata $classMetadata)
     {
-        return $this->getClassAnalyzer()->hasTrait($classMetadata->reflClass, $this->translatableTrait);
+        return $this->getClassAnalyzer()->hasTrait($classMetadata->reflClass, $this->translatableTrait, true);
     }
 
     /**
